@@ -1,0 +1,5 @@
+name: TitanetLibs
+version: '${version}'
+main: it.titanet.titanlibs.TitanetLibs
+api-version: 1.19
+authors: [ Staminal ]
