@@ -87,6 +87,8 @@ In seguito è possibile utilizzare l'oggetto FileConfiguration normalmente.
 Le query per la creazione del database necessitano di essere scritte nel file ```resources/schema.sql```
 è possibile vederne un esempio <a href="https://github.com/TitanetMC/TitanLibs/blob/main/src/main/resources/schema.sql">QUI</a>.
 
+#### Nota: Il commento ```-- SEPARATOR --``` a fine di ogni Query è strettamente necessario.
+
 Esclusivamente il database MySQL può disporre di una configurazione, trovabile <a href="https://github.com/TitanetMC/TitanLibs/blob/main/src/main/resources/config.yml">QUI</a>.
 
 ## Utilizzo
