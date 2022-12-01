@@ -7,7 +7,7 @@ import java.util.Properties;
 
 import static java.util.Objects.requireNonNull;
 
-class MysqlDatabase extends Database {
+public class MysqlDatabase extends Database {
     private final ConfigurationSection config;
 
     public MysqlDatabase(ConfigurationSection config) {

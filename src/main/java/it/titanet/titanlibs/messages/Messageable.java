@@ -6,11 +6,12 @@ package it.titanet.titanlibs.messages;
 
 import net.kyori.adventure.platform.bukkit.BukkitAudiences;
 import net.kyori.adventure.text.minimessage.MiniMessage;
+import org.jetbrains.annotations.NotNull;
 
 public interface Messageable {
 
-    MiniMessage getMiniMessage();
+    @NotNull MiniMessage getMiniMessage();
 
-    BukkitAudiences getAudience();
+    @NotNull BukkitAudiences getAudience();
 
 }
