@@ -11,8 +11,8 @@
   <summary>Moduli</summary>
   <ol>
     <li><a href="#database">Databases</a></li>
-    <li><a href="#message">Messages</a></li>
     <li><a href="#configs">Configurations</a></li>
+    <li><a href="#message">Messages</a></li>
   </ol>
 </details>
 
@@ -44,7 +44,7 @@ L'uso corretto è elencato di seguente usando come esempio la classe ```ConfigMa
 ```
 -----------
 
-## ConfigManager
+## ConfigManager <a name="configs"></a>
 ### Creazione del ConfigManger
 Per creare un ```ConfigManager``` è necessario prima costruire un ```Enum``` 
 che specifica il percorso file di ogni file di configurazione, come nell'esempio seguente.
@@ -81,8 +81,8 @@ In seguito è possibile utilizzare l'oggetto FileConfiguration normalmente.
 
 ## Database
 
-<a name="database"></a>
-### Creazione del database
+
+### Creazione del database <a name="database"></a>
 
 Le query per la creazione del database necessitano di essere scritte nel file ```resources/schema.sql```
 è possibile vederne un esempio <a href="https://github.com/TitanetMC/TitanLibs/blob/main/src/main/resources/schema.sql">QUI</a>.
@@ -117,7 +117,7 @@ try (Connection connection = database.getConnection()) {
 ```
 -----------
 
-## Messages
+## Messages <a name="message"></a>
 ### Creazione del MessageManager
 
 Prima di poter creare o inviare messaggi è necessario istanziare un ```MessageManager```, per farlo serve
