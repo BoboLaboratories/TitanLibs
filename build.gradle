@@ -3,9 +3,6 @@ plugins {
     id 'java'
 }
 
-sourceCompatibility = JavaVersion.VERSION_17
-targetCompatibility = JavaVersion.VERSION_17
-
 group 'it.titanet.titanlibs'
 version = '1.0'
 
