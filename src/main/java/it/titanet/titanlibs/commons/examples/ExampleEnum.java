@@ -1,6 +1,6 @@
-package it.titanet.titanlibs.examples;
+package it.titanet.titanlibs.commons.examples;
 
-import it.titanet.titanlibs.configurations.IConfig;
+import it.titanet.titanlibs.commons.configurations.IConfig;
 import org.jetbrains.annotations.NotNull;
 
 public enum ExampleEnum implements IConfig {

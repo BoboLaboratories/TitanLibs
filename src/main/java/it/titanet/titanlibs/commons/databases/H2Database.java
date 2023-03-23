@@ -1,6 +1,4 @@
-package it.titanet.titanlibs.databases;
-
-import org.bukkit.configuration.ConfigurationSection;
+package it.titanet.titanlibs.commons.databases;
 
 import java.io.File;
 import java.io.IOException;

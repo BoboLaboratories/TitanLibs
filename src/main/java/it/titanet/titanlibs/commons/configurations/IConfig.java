@@ -1,4 +1,4 @@
-package it.titanet.titanlibs.configurations;
+package it.titanet.titanlibs.commons.configurations;
 
 import org.jetbrains.annotations.NotNull;
 

@@ -1,15 +1,11 @@
-package it.titanet.titanlibs.databases;
+package it.titanet.titanlibs.commons.databases;
 
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
-import it.titanet.titanlibs.utils.Reloadable;
+import it.titanet.titanlibs.commons.utils.Reloadable;
 import org.apache.commons.lang.StringUtils;
-import org.bukkit.Bukkit;
-import org.bukkit.configuration.ConfigurationSection;
 import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
-import javax.xml.crypto.Data;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;

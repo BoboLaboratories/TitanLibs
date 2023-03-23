@@ -130,7 +130,7 @@ che la classe che estende ```JavaPlugin``` implementi l'interfaccia ```Messageab
 risultato dovrà essere come nel seguente esempio.
 
 ```java
-public final class ExamplePlugin extends JavaPlugin implements Messageable {
+public final class ExamplePlugin extends JavaPlugin {
 
     private MiniMessage miniMessage;
     private BukkitAudiences audience;
@@ -147,16 +147,6 @@ public final class ExamplePlugin extends JavaPlugin implements Messageable {
     @Override
     public void onDisable() {
         // Plugin shutdown logic
-    }
-
-    @Override
-    public @NotNull MiniMessage getMiniMessage() {
-        return miniMessage;
-    }
-
-    @Override
-    public @NotNull BukkitAudiences getAudience() {
-        return audience;
     }
 }
 ```

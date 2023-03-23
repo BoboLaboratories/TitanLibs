@@ -7,3 +7,16 @@ database:
   username: "root"
   password: ""
   properties: {}
+
+# Esempio di configurazione della calsse Format:
+
+format:
+  symbol: '$'
+  format: '###,##0.##'
+  display-name: "Money"
+  short:
+    K: 1_000
+    M: 1_000_000
+    B: 1_000_000_000
+    T: 1_000_000_000_000
+    Q: 1_000_000_000_000_000

@@ -1,6 +1,7 @@
-package it.titanet.titanlibs.configurations;
+package it.titanet.titanlibs.paper.configurations;
 
-import it.titanet.titanlibs.utils.Reloadable;
+import it.titanet.titanlibs.commons.configurations.IConfig;
+import it.titanet.titanlibs.commons.utils.Reloadable;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;

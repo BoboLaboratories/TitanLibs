@@ -1,4 +1,4 @@
-package it.titanet.titanlibs.utils;
+package it.titanet.titanlibs.commons.utils;
 
 public interface Reloadable {
     default void onEnable() {}

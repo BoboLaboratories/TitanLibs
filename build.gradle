@@ -1,5 +1,6 @@
 plugins {
     id 'com.github.johnrengelman.shadow' version '7.1.2'
+    id 'maven-publish'
     id 'java'
 }
 
@@ -9,39 +10,41 @@ version = '1.0'
 repositories {
     mavenCentral()
     maven { url = 'https://papermc.io/repo/repository/maven-public/' }                      // Paper
+    maven { url = 'https://oss.sonatype.org/content/groups/public/' }                       // Bungeecord
 
 }
+
 
 dependencies {
     // Paper
     compileOnly "io.papermc.paper:paper-api:1.17.1-R0.1-SNAPSHOT"
 
+    // Bungeecord
+    compileOnly 'net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT'
+
     // JetBrains Annotations
-    implementation 'org.jetbrains:annotations:23.0.0'
+    compileOnly 'org.jetbrains:annotations:24.0.1'
 
     // Hikari
-    implementation 'com.zaxxer:HikariCP:5.0.1'
+    compileOnly 'com.zaxxer:HikariCP:5.0.1'
 
     // H2
-    implementation 'com.h2database:h2:1.3.148'
-
+    compileOnly 'com.h2database:h2:2.1.214'
 
     // Adventure
-    implementation 'net.kyori:adventure-api:4.12.0'
+    compileOnly 'net.kyori:adventure-api:4.13.0'
+    // Adventure Bukkit
+    compileOnly "net.kyori:adventure-platform-bukkit:4.3.0"
     // Adventure Bungee
-    implementation "net.kyori:adventure-platform-bukkit:4.1.2"
+    compileOnly "net.kyori:adventure-platform-bungeecord:4.3.0"
     // MiniMessage
-    implementation 'net.kyori:adventure-text-minimessage:4.12.0'
+    compileOnly 'net.kyori:adventure-text-minimessage:4.13.0'
 
 }
 
 shadowJar {
-    archivesBaseName = 'TitanetLibs'
+    archivesBaseName = 'titanet-libs'
     archiveClassifier.set('')
-
-    relocate 'com.zaxxer', 'it.titanet.libs.hikari'
-    relocate 'com.h2databas', 'it.titanet.libs.hikari'
-    relocate 'net.kyori', 'it.titanet.libs.hikari'
 }
 
 processResources {

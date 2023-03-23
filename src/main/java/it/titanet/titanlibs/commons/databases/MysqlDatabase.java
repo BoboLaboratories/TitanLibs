@@ -1,4 +1,4 @@
-package it.titanet.titanlibs.databases;
+package it.titanet.titanlibs.commons.databases;
 
 import org.bukkit.configuration.ConfigurationSection;
 import org.jetbrains.annotations.NotNull;
