@@ -23,28 +23,34 @@ dependencies {
     compileOnly 'net.md-5:bungeecord-api:1.19-R0.1-SNAPSHOT'
 
     // JetBrains Annotations
-    compileOnly 'org.jetbrains:annotations:24.0.1'
+    implementation 'org.jetbrains:annotations:24.0.1'
 
     // Hikari
-    compileOnly 'com.zaxxer:HikariCP:5.0.1'
+    implementation 'com.zaxxer:HikariCP:5.0.1'
 
     // H2
-    compileOnly 'com.h2database:h2:2.1.214'
+    implementation 'com.h2database:h2:2.1.214'
 
     // Adventure
-    compileOnly 'net.kyori:adventure-api:4.13.0'
+    implementation 'net.kyori:adventure-api:4.13.0'
     // Adventure Bukkit
-    compileOnly "net.kyori:adventure-platform-bukkit:4.3.0"
+    implementation "net.kyori:adventure-platform-bukkit:4.3.0"
     // Adventure Bungee
-    compileOnly "net.kyori:adventure-platform-bungeecord:4.3.0"
+    implementation "net.kyori:adventure-platform-bungeecord:4.3.0"
     // MiniMessage
-    compileOnly 'net.kyori:adventure-text-minimessage:4.13.0'
+    implementation 'net.kyori:adventure-text-minimessage:4.13.0'
 
 }
 
 shadowJar {
     archivesBaseName = 'titanet-libs'
     archiveClassifier.set('')
+
+    relocate 'co.aikar.commands', 'it.titanet.libs.aikar'
+    relocate 'com.zaxxer', 'it.titanet.libs.hikari'
+    relocate 'com.h2database', 'it.titanet.libs.h2'
+    relocate 'net.kyori', 'it.titanet.libs.kyori'
+
 }
 
 processResources {
