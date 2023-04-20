@@ -3,7 +3,7 @@ package it.titanet.titanlibs.commons.databases;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
 import it.titanet.titanlibs.commons.utils.Reloadable;
-import org.apache.commons.lang.StringUtils;
+import org.h2.util.StringUtils;
 import org.jetbrains.annotations.NotNull;
 
 import java.io.BufferedReader;
@@ -79,7 +79,7 @@ public abstract class Database implements Reloadable, DatabaseEvents {
                 while ((line = reader.readLine()) != null) {
                     if (line.contains("-- SEPARATOR --")) {
                         String query = sb.toString().trim();
-                        if (!StringUtils.isBlank(query)) {
+                        if (!StringUtils.isNullOrEmpty(query)) {
                             queries.add(query);
                         }
                         sb = new StringBuilder();
